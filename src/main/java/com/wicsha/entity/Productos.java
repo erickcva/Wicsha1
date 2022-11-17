@@ -10,12 +10,14 @@ public class Productos {
 
 	public static final int NOMBRE_PRENDA_LENGTH = 25;
 	public static final int TALLA_LENGTH = 25;
-	public static final int NUMERO_TARJETA_LENGTH = 16;
 	public static final int STOCK_LENGTH = 20;
 	public static final int PRECIO_LENGTH = 7;
 	public static final int DESCRIPCION_LENGTH = 100;
-	public static final int IMAGEN_LENGTH = 250;
+	public static final int IMG_LENGTH = 250;
 	public static final int TARGET_LENGTH = 5;
+	public static final int DIVISA_LENGTH = 5;
+	public static final int DETALLE_LENGTH = 100;
+	
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,7 +30,7 @@ public class Productos {
 	@Column(name="talla", length=TALLA_LENGTH)
 	private String talla;
 	
-	@Column(name="precio", length=PRECIO_LENGTH)
+	@Column(name="precio")
 	private Double precio;
 	
 	@Column(name="stock", length=STOCK_LENGTH)
@@ -40,9 +42,24 @@ public class Productos {
 	@Column(name="descripcion", length=DESCRIPCION_LENGTH)
 	private String descripcion;
 	
-	@Column(name="imagen", length=IMAGEN_LENGTH)
-	private String imagen;
+	@Column(name="img_principal", length=IMG_LENGTH)
+	private String imgPrincipal;
+	
+	@Column(name="imag0", length=IMG_LENGTH)
+	private String img0;
+	
+	@Column(name="imag1", length=IMG_LENGTH)
+	private String img1;
+	
+	@Column(name="imag2", length=IMG_LENGTH)
+	private String img2;;
 	
 	@Column(name="target", length=TARGET_LENGTH)
 	private String target;
+	
+	@Column(name="divisa", length=DIVISA_LENGTH)
+	private String divisa;
+	
+	@Column(name="detalle", length=DETALLE_LENGTH)
+	private String detalle;
 }

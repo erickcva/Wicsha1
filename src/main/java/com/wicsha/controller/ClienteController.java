@@ -21,10 +21,10 @@ public class ClienteController {
 	public ResponseEntity<Iterable<Cliente>> getAllCliente() {		
 		return new ResponseEntity<Iterable<Cliente>>
 			(clienteService.findAllCliente(), HttpStatus.OK);
-	}
+	}	
 	
 	
-
+	
 	@GetMapping("/{id}") //localhost:8080/api/cliente/id
 	@ResponseBody
 	public ResponseEntity<?> getClienteById(@PathVariable("id") Long id) {

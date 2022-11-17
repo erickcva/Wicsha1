@@ -57,7 +57,7 @@ public class ProductoService implements IProductosService {
 		productosInDatabase.setTalla(productos.getTalla());
 		productosInDatabase.setPrecio(productos.getPrecio());
 		productosInDatabase.setDescripcion(productos.getDescripcion());
-		productosInDatabase.setImagen(productos.getImagen());
+		productosInDatabase.setImgPrincipal(productos.getImgPrincipal());
 		productosInDatabase.setTarget(productos.getTarget());		
 		return productosRepository.save(productosInDatabase);	
 	}

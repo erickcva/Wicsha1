@@ -8,6 +8,5 @@ public interface ClienteRepository extends CrudRepository<Cliente, Long>{
 	
 	Cliente findByCorreo(String correo);
 	boolean existsByCorreo(String correo);
-	
-	
+
 }
