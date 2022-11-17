@@ -28,10 +28,7 @@ public class Productos {
 	@Column(name="talla", length=TALLA_LENGTH)
 	private String talla;
 	
-	@Column(name="numero_tarjeta", length=NUMERO_TARJETA_LENGTH)
-	private String numeroTarjeta;
-	
-	@Column(name="precio")
+	@Column(name="precio", length=PRECIO_LENGTH)
 	private Double precio;
 	
 	@Column(name="stock", length=STOCK_LENGTH)

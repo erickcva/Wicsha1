@@ -24,9 +24,8 @@ public class ClienteService implements IClienteService{
 		return clienteRepository.findById(id)
 				.orElseThrow(() -> 
 				new IllegalStateException
-				("El usuario con el id" + id + " no existe"));
+				("El usuario con el id " + id + " no existe"));
 	}
-	
 
 	//Encuentra cliente por correo
 	@Override
