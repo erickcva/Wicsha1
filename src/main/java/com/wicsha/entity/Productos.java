@@ -17,6 +17,7 @@ public class Productos {
 	public static final int TARGET_LENGTH = 5;
 	public static final int DIVISA_LENGTH = 5;
 	public static final int DETALLE_LENGTH = 100;
+	public static final int CATEGO_LENGTH = 15;
 	
 	
 	@Id
@@ -62,4 +63,7 @@ public class Productos {
 	
 	@Column(name="detalle", length=DETALLE_LENGTH)
 	private String detalle;
+	
+	@Column(name="catego", length=CATEGO_LENGTH)
+	private String catego;
 }
